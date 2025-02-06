@@ -113,6 +113,17 @@
             max-width: 900px;
             margin: 0 auto;
         }
+        #scrollTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -164,35 +175,26 @@
                 <a href="#" class="buy-btn">Acheter</a>
             </div>
         </div>
-        <div id="tests-urinaires" class="products">
-            <div class="product">
-                <img src="images/downloadedImage.png" alt="Test Urinaire">
-                <h3>Test Urinaire Précis</h3>
-                <p>Fiabilité optimale</p>
-                <p class="price">34.99€</p>
-                <a href="#" class="buy-btn">Acheter</a>
-            </div>
-        </div>
-        <div id="kits-complets" class="products">
-            <div class="product">
-                <img src="images/downloadedImage.png" alt="Kit Complet 1">
-                <h3>Kit Détection Standard</h3>
-                <p>Pack complet de tests</p>
-                <p class="price">59.99€</p>
-                <a href="#" class="buy-btn">Acheter</a>
-            </div>
-            <div class="product">
-                <img src="images/downloadedImage.png" alt="Kit Complet 2">
-                <h3>Kit Détection Avancé</h3>
-                <p>Tests de nouvelle génération</p>
-                <p class="price">79.99€</p>
-                <a href="#" class="buy-btn">Acheter</a>
-            </div>
-        </div>
     </div>
     
     <div class="footer">
         &copy; 2024 Détection Pro - Tous droits réservés
     </div>
+    
+    <button id="scrollTop" onclick="scrollToTop()">↑</button>
+    
+    <script>
+        window.onscroll = function() {
+            let button = document.getElementById("scrollTop");
+            if (document.documentElement.scrollTop > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
