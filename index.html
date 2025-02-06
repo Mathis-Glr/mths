@@ -10,27 +10,46 @@
             margin: 0;
             padding: 0;
             background: #f4f4f4;
-            text-align: center;
         }
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 50px auto;
             background: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .header {
-            font-size: 36px;
+            font-size: 40px;
             font-weight: bold;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: black;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
         }
         .product-img {
             width: 100%;
             max-width: 400px;
-            margin: 20px auto;
         }
         .description {
             font-size: 18px;
             color: #555;
+            max-width: 500px;
         }
         .features {
             display: flex;
@@ -40,32 +59,55 @@
         }
         .feature-box {
             background: #ddd;
-            padding: 10px;
+            padding: 15px;
             border-radius: 5px;
+            text-align: center;
         }
         .buy-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
+            display: block;
+            width: max-content;
+            margin: 20px auto;
+            padding: 15px 25px;
             font-size: 20px;
             color: white;
             background: black;
             text-decoration: none;
             border-radius: 5px;
         }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            color: white;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div>Détection Pro</div>
+        <div>
+            <a href="#">Accueil</a>
+            <a href="#">Produits</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
     <div class="container">
-        <div class="header">Détection Pro</div>
-        <img src="images/downloadedImage.png" alt="Produit de détection" class="product-img">
-        <p class="description">Un test de détection de drogues ultra précis, conçu pour une utilisation rapide et fiable.</p>
+        <div class="header">Test de Détection Ultra-Précis</div>
+        <div class="main-content">
+            <img src="images/downloadedImage.png" alt="Produit de détection" class="product-img">
+            <p class="description">Un test de détection de drogues ultra précis, conçu pour une utilisation rapide et fiable. Obtenez des résultats instantanés avec une fiabilité optimale.</p>
+        </div>
         <div class="features">
             <div class="feature-box">Résultats rapides</div>
             <div class="feature-box">Haute précision</div>
             <div class="feature-box">Facile à utiliser</div>
+            <div class="feature-box">Portatif et pratique</div>
         </div>
         <a href="#" class="buy-btn">Acheter maintenant</a>
+    </div>
+    <div class="footer">
+        &copy; 2024 Détection Pro - Tous droits réservés
     </div>
 </body>
 </html>
