@@ -35,44 +35,44 @@
             text-decoration: none;
             padding: 10px;
         }
-        .main-content {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-        .product-img {
-            width: 100%;
-            max-width: 400px;
-        }
-        .description {
-            font-size: 18px;
-            color: #555;
-            max-width: 500px;
-        }
-        .features {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .feature-box {
-            background: #ddd;
-            padding: 15px;
-            border-radius: 5px;
+        .home {
             text-align: center;
+            padding: 50px;
         }
-        .buy-btn {
-            display: block;
-            width: max-content;
-            margin: 20px auto;
+        .home a {
+            display: inline-block;
+            margin-top: 20px;
             padding: 15px 25px;
             font-size: 20px;
             color: white;
             background: black;
             text-decoration: none;
             border-radius: 5px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .product img {
+            width: 100%;
+            max-width: 200px;
+        }
+        .price {
+            font-size: 18px;
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
         }
         .footer {
             text-align: center;
@@ -87,25 +87,45 @@
     <div class="navbar">
         <div>Détection Pro</div>
         <div>
-            <a href="#">Accueil</a>
-            <a href="#">Produits</a>
+            <a href="index.html">Accueil</a>
+            <a href="products.html">Produits</a>
             <a href="#">Contact</a>
         </div>
     </div>
-    <div class="container">
-        <div class="header">Test de Détection Ultra-Précis</div>
-        <div class="main-content">
-            <img src="images/downloadedImage.png" alt="Produit de détection" class="product-img">
-            <p class="description">Un test de détection de drogues ultra précis, conçu pour une utilisation rapide et fiable. Obtenez des résultats instantanés avec une fiabilité optimale.</p>
-        </div>
-        <div class="features">
-            <div class="feature-box">Résultats rapides</div>
-            <div class="feature-box">Haute précision</div>
-            <div class="feature-box">Facile à utiliser</div>
-            <div class="feature-box">Portatif et pratique</div>
-        </div>
-        <a href="#" class="buy-btn">Acheter maintenant</a>
+    
+    <div class="home">
+        <h1>Bienvenue sur Détection Pro</h1>
+        <p>Découvrez nos tests de détection de drogues ultra précis.</p>
+        <a href="products.html">Voir nos produits</a>
     </div>
+    
+    <div class="container">
+        <div class="header">Nos Produits</div>
+        <div class="products">
+            <div class="product">
+                <img src="images/downloadedImage.png" alt="Produit 1">
+                <h3>Test Salivaire</h3>
+                <p>Détection rapide et fiable</p>
+                <p class="price">29.99€</p>
+                <a href="#" class="buy-btn">Acheter</a>
+            </div>
+            <div class="product">
+                <img src="images/downloadedImage.png" alt="Produit 2">
+                <h3>Test Urinaire</h3>
+                <p>Précision maximale</p>
+                <p class="price">39.99€</p>
+                <a href="#" class="buy-btn">Acheter</a>
+            </div>
+            <div class="product">
+                <img src="images/downloadedImage.png" alt="Produit 3">
+                <h3>Kit Complet</h3>
+                <p>Tests multiples</p>
+                <p class="price">59.99€</p>
+                <a href="#" class="buy-btn">Acheter</a>
+            </div>
+        </div>
+    </div>
+    
     <div class="footer">
         &copy; 2024 Détection Pro - Tous droits réservés
     </div>
